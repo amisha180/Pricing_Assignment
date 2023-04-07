@@ -11,7 +11,7 @@ toggleArea.addEventListener("click", function () {
         basicPrice.innerHTML = `<p class="price-1"> <span class="dollar-sign">&dollar;</span>199.99</p>`;
         profPrice.innerHTML = `  <p class="price-2"> <span class="dollar-sign">&dollar;</span>249.99</p>`;
         masterPrice.innerHTML = `  <p class="price-3"> 
-        <span class="dollar-sign">&dollar;</span>339.99</p>`;
+        <span class="dollar-sign">&dollar; </span>339.99</p>`;
         f = false;
     }
     else{
