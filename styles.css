@@ -1,0 +1,210 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  overflow-y: scroll; 
+  font-weight: bold;
+  background-color: rgb(236, 244, 244);
+}
+
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  color: rgb(106, 106, 109);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  padding-bottom: 0;
+  gap: 2.6rem;
+}
+/* Toggle Section */
+nav {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 1.9rem;
+  align-items: center;
+}
+
+.toggle-area {
+  border: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  width: 3.8rem;
+  height: 2.3rem;
+  border-radius: 25px;
+  background-color:  rgb(17, 99, 4);
+}
+
+.toggle-btn {
+  cursor: pointer;
+  position: relative;
+  width: 1.7rem;
+  height: 1.7rem;
+  margin: 5%;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.toggle-area.monthly {
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.toggle-area.anually {
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.toggle-section p {
+  color: rgb(17, 99, 4);
+}
+
+/* Pricing Section */
+
+.pricing-container {
+  display: grid;
+  width: 72%;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  margin-top: 5.8rem;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2.1rem 0.8rem;
+}
+.container-1,
+.container-2,
+.container-3 {
+  background-color: white;
+  color: black;
+  gap: 1.5rem;
+  margin: 10px;
+}
+.container-1:hover,
+.container-2:hover,
+.container-3:hover {
+  background-color:  rgb(17, 99, 4);
+  color: white;
+  margin: 0px;
+  gap : 0.5rem;
+}
+
+.container-1:hover button,
+.container-2:hover button,
+.container-3:hover button{
+  background-color: white;
+  color:  rgb(17, 99, 4);
+}
+
+
+.pricing h2 {
+  font-size: 1.23rem;
+  font-weight: 500;
+}
+
+.pricing p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
+.dollar-sign {
+  font-size: 2rem;
+}
+
+hr {
+  width: 90%;
+  border-width: 0.5px;
+  margin: 0 auto;
+  border-color: transparent;
+  border-color: lightgrey;
+  border-style: solid;
+  opacity: 0.5;
+}
+.pricing ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.pricing ul li {
+  padding: 1.06rem;
+}
+
+.pricing button {
+  cursor: pointer;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-1 button,
+.container-2 button,
+.container-3 button {
+  color: white;
+  background-color: rgb(17, 99, 4);
+}
+
+
+@media screen and (max-width: 1025px) {
+  .pricing-container {
+    width: 50%;
+    grid-template-columns: 1fr;
+    margin-top: 5.8rem;
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pricing-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pricing-container {
+    width: 90%;
+  }
+}
